@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucamshop - Tu Tienda Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        
+        header .logo img {
+            max-width: 20%;
+            right: 500px;
+            position: relative;
+            
+            
+    
+        }
+
+
+        nav {
+            background-color: #ffffff;
+            padding:0%;
+            text-align:right;
+            
+            
+        }
+        nav a {
+            color: 946DBE;
+            margin: 0 70px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: rebeccapurple;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding-bottom: 80px; /* Espacio para el footer */
+        }
+        h2 {
+            text-align: center;
+            color:rebeccapurple;
+            margin-bottom: 2rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rebeccapurple;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            margin: 1rem 0 0.5rem 0;
+        }
+        .product-card .price {
+            color: rebeccapurple;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .product-card button {
+            background-color: rebeccapurple;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 1rem 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card button:hover {
+            background-color:slateblue;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Juan Camilo Medina B\Documents\CURSO VIRTUAL GOOGLE CLOUD IA\imagenes\logo sucamshop.jpeg">
+        </div>
+
+        <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Contacto</a>
+         </nav>
+         
+    </header>
+
+    
+
+    <div class="container">
+        <h2>Nuestros Productos</h2>
+        <div class="product-grid">
+            <!-- Ejemplo de un producto -->
+            <div class="product-card">
+                <img src="/Users/Juan Camilo Medina B/Desktop/catalogo sucamshop 2025/Maleta Deportiva Maletin Gym Morral negro.jfif" alt="Producto 1">
+                <h3>Maleta Deportiva Maletin Gym Morral</h3>
+                <p class="price">$87.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <!-- Ejemplo de otro producto -->
+            <div class="product-card">
+                <img src="/Users/Juan Camilo Medina B/Desktop/catalogo sucamshop 2025/Set X3 Bolso Cosmetiquera Wash Bag 6.jpg" alt="Producto 2">
+                <h3>Set X3 Bolso Cosmetiquera Wash Bag</h3>
+                <p class="price">$64.900</p>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <!-- Puedes añadir más productos aquí -->
+            <div class="product-card">
+                <img src="/Users/Juan Camilo Medina B/Desktop/catalogo sucamshop 2025/vasotermico.jpg" alt="Producto 3">
+                <h3>Vaso Termico Con Pitillo</h3>
+                <p class="price">$70.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sucamshop. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
