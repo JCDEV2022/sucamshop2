@@ -34,43 +34,10 @@
             
     
         }
-        /* === Checkbox oculto === */
-         #menu-toggle {
-        display: none;
-    }
+    
+         
 
-       /* === Ícono del menú hamburguesa === */
-    .menu-icon {
-      display: none;
-      cursor: pointer;
-      flex-direction: column;
-      width: 25px;
-      height: 20px;
-      justify-content: space-between;
-    }
-
-    .menu-icon span {
-      display: block;
-      height: 3px;
-      width: 100%;
-      background: white;
-      border-radius: 2px;
-      transition: 0.3s;
-    }
-
-       
-
-
-        nav {
-            background-color: #ffffff;
-            padding:0%;
-            text-align:right;
-            display: flex;
-            gap: 20px;
-            list-style: none;
-            
-            
-        }
+        
         nav a {
             color: 946DBE;
             margin: 0 70px;
@@ -82,30 +49,71 @@
             color: rebeccapurple;
         }
 
-         /* === Responsive: vista móvil === */
+        /* === Checkbox oculto === */
+    #menu-toggle {
+      display: none;
+    }
+
+     /* === Ícono del menú hamburguesa === */
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      width: 25px;
+      height: 20px;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .menu-icon span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: white;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* === Estilos responsive === */
     @media (max-width: 768px) {
       .menu-icon {
         display: flex;
       }
 
-      /* Mostrar menú cuando el checkbox está activo */
-      #menu-toggle:checked + .menu-icon + nav ul {
+      nav {
+            background-color: #ffffff;
+            padding:10px 0;
+            width: 100%;
+            left: 0;    
+            align-items: center;
+            display: none;
+            flex-direction: column;
+            position:absolute;
+            top:60px;
+            gap: 20px;
+            list-style: none;
+            
+            
+        }
+
+        /* Mostrar menú cuando el checkbox está activado */
+      #menu-toggle:checked + .menu-icon + nav {
         display: flex;
       }
 
-      /* Animación de las líneas del icono */
+      /* Animación del ícono (líneas → X) */
       #menu-toggle:checked + .menu-icon span:nth-child(1) {
         transform: rotate(45deg) translateY(8px);
       }
 
-      #menu-toggle:checked + .menu-icon span:nth-child(2) {
+    #menu-toggle:checked + .menu-icon span:nth-child(2) {
         opacity: 0;
       }
 
-      #menu-toggle:checked + .menu-icon span:nth-child(3) {
+       #menu-toggle:checked + .menu-icon span:nth-child(3) {
         transform: rotate(-45deg) translateY(-8px);
       }
     }
+
         .container {
             width: 90%;
             max-width: 1200px;
