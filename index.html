@@ -45,6 +45,25 @@
          display: none; /* Oculto en escritorio */
         }
 
+        /* Checkbox oculto */
+         #menu-toggle {
+         display: none;
+        }
+
+        /* Ícono de hamburguesa */
+        .menu-icon {
+         display: none;
+         cursor: pointer;
+         font-size: 1.8em;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+       .menu-toggle {
+        display: block;
+         }
+        }
+
 
         nav {
             background-color: #ffffff;
@@ -131,14 +150,23 @@
             width: 100%;
             margin-top: 2rem;
         }
+
+         /* Cuando el checkbox está activado, se muestra el menú */
+      #menu-toggle:checked + label + nav ul {
+        display: flex;
+      }
+    
     </style>
 </head>
+
 <body>
 
     <header>
         <div class="logo">
             <img src="imagenes/logo sucamshop.jpeg">
         </div>
+
+        <button class="menu-toggle">☰</button>
 
         <nav>
         <a href="#">Inicio</a>
