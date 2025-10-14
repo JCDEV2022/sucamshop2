@@ -13,13 +13,23 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        header {
+        /*header {
             background-color: #ffffff;
             color: white;
             padding: 1.5rem 0;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+        }*/
+
+        header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
         header h1 {
             margin: 0;
             font-size: 2.5rem;
@@ -199,6 +209,17 @@
     </header>
 
     
+    <script>
+    // Mostrar/Ocultar menú en móvil
+    const menuIcon = document.getElementById("menu-icon");
+    const nav = document.getElementById("nav");
+
+    menuIcon.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      menuIcon.classList.toggle("open");
+    });
+  </script>
+
 
     <div class="container">
         <h2>Nuestros Productos</h2>
