@@ -35,7 +35,10 @@
     
         }
     
-         
+         nav {
+         display: flex;
+          gap: 20px;
+        }
 
         
         nav a {
@@ -49,7 +52,56 @@
             color: rebeccapurple;
         }
 
-   
+       /* ===== Icono del menú hamburguesa ===== */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  justify-content: space-between;
+}
+
+.menu-icon span {
+  background: white;
+  height: 3px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ===== Animación del icono al abrir ===== */
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== Estilos responsive ===== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
 
         .container {
             width: 90%;
@@ -129,7 +181,12 @@
             <img src="imagenes/logo sucamshop.jpeg">
         </div>
 
-        
+        <!-- Icono del menú hamburguesa -->
+  <div class="menu-icon" id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
         <nav>
         <a href="#">Inicio</a>
