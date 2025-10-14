@@ -49,70 +49,7 @@
             color: rebeccapurple;
         }
 
-        /* === Checkbox oculto === */
-    #menu-toggle {
-      display: none;
-    }
-
-     /* === Ícono del menú hamburguesa === */
-    .menu-icon {
-      display: none;
-      flex-direction: column;
-      width: 25px;
-      height: 20px;
-      justify-content: space-between;
-      cursor: pointer;
-    }
-
-    .menu-icon span {
-      display: block;
-      height: 3px;
-      width: 100%;
-      background: white;
-      border-radius: 2px;
-      transition: 0.3s;
-    }
-
-    /* === Estilos responsive === */
-    @media (max-width: 768px) {
-      .menu-icon {
-        display: flex;
-      }
-
-      nav {
-            background-color: #ffffff;
-            padding:10px 0;
-            width: 100%;
-            left: 0;    
-            align-items: center;
-            display: none;
-            flex-direction: column;
-            position:absolute;
-            top:60px;
-            gap: 20px;
-            list-style: none;
-            
-            
-        }
-
-        /* Mostrar menú cuando el checkbox está activado */
-      #menu-toggle:checked + .menu-icon + nav {
-        display: flex;
-      }
-
-      /* Animación del ícono (líneas → X) */
-      #menu-toggle:checked + .menu-icon span:nth-child(1) {
-        transform: rotate(45deg) translateY(8px);
-      }
-
-    #menu-toggle:checked + .menu-icon span:nth-child(2) {
-        opacity: 0;
-      }
-
-       #menu-toggle:checked + .menu-icon span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-8px);
-      }
-    }
+   
 
         .container {
             width: 90%;
@@ -180,10 +117,7 @@
             margin-top: 2rem;
         }
 
-         /* Cuando el checkbox está activado, se muestra el menú */
-      #menu-toggle:checked + label + nav {
-        display: flex;
-      }
+        
     
     </style>
 </head>
@@ -195,7 +129,7 @@
             <img src="imagenes/logo sucamshop.jpeg">
         </div>
 
-        <button class="menu-toggle">☰</button>
+        
 
         <nav>
         <a href="#">Inicio</a>
