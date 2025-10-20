@@ -36,7 +36,7 @@ body {
 header {
             background-color: #ffffff;
             color:darkred;
-            padding: 1.5rem 0;
+            padding: 1rem 0;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
@@ -137,7 +137,7 @@ header h1 {
     flex-direction: column; /* menú vertical */
     background-color:darkgrey;
     position: absolute;
-    top: 60px;
+    top: 120px;
     left: 0;
     width: 100%;
     display: none; /* oculto por defecto */
