@@ -137,7 +137,7 @@ header h1 {
     flex-direction: column; /* menú vertical */
     background-color:darkgrey;
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 0;
     width: 100%;
     display: none; /* oculto por defecto */
